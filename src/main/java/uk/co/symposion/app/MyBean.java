@@ -23,12 +23,4 @@ public class MyBean {
         this.environment = environment;
     }
 
-//    @EventListener(ApplicationReadyEvent.class)
-//    public void doSomethingAfterStartup() {
-//        System.out.println("hello world, I have just started up, bean message is: " + testProperties.getMyProperty());
-//        environment.getPropertySources().addFirst(new MapPropertySource("TestPropertySource", Map.of("test.myProperty", "Override")));
-//        publisher.publishEvent(new RefreshEvent(this, "Foo", "Bar"));
-//        System.out.println("Post refresh, bean message is: " + testProperties.getMyProperty());
-//    }
-
 }
