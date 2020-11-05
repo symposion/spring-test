@@ -1,16 +1,14 @@
 package uk.co.symposion.app;
 
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Bean;
-import org.springframework.core.env.ConfigurableEnvironment;
 
 @SpringBootApplication
-@EnableConfigurationProperties({TestProperties.class, TestPropertiesTwo.class})
+@EnableConfigurationProperties(MyRefreshBeanTwo.class)
 public class SpringBootstrapTest {
 
     public static void main(String[] args) {
@@ -18,14 +16,21 @@ public class SpringBootstrapTest {
     }
 
     @Bean
-    public MyBean getMyBean(TestProperties props, TestPropertiesTwo testPropsTwo, TestPropertiesThree testPropsThree, ApplicationEventPublisher publisher, ConfigurableEnvironment environment, DefaultListableBeanFactory beanFactory){
-        return new MyBean(props, testPropsTwo, testPropsThree, publisher, environment,beanFactory);
+    public MyBean getMyBean(ApplicationEventPublisher publisher, MyRefreshBean myRefreshBean, MyRefreshBeanTwo myRefreshBeanTwo, MyRefreshBeanThree three, MyRefreshBeanFour four){
+        return new MyBean(publisher, myRefreshBean, myRefreshBeanTwo, three, four);
     }
 
     @Bean
     @RefreshScope
-    public TestPropertiesThree TestPropertiesThree() {
-        return new TestPropertiesThree();
+    public MyRefreshBeanFour myRefreshBeanFour() {
+        return new MyRefreshBeanFour();
+    }
+
+
+    @Bean
+    @RefreshScope
+    public MyRefreshBean myRefreshBean() {
+        return new MyRefreshBean();
     }
 
 }
