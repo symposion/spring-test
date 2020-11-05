@@ -5,6 +5,7 @@ import org.springframework.boot.context.event.ApplicationReadyEvent;
 import org.springframework.cloud.endpoint.event.RefreshEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.event.EventListener;
+import org.springframework.core.annotation.Order;
 import org.springframework.core.env.ConfigurableEnvironment;
 import org.springframework.core.env.MapPropertySource;
 import uk.co.symposion.TestProperties;
@@ -24,6 +25,7 @@ public class MyBean {
     }
 
     @EventListener(ApplicationReadyEvent.class)
+    @Order()
     public void doSomethingAfterStartup() {
         System.out.println("hello world, I have just started up, bean message is: " + testProperties.getMyProperty());
         environment.getPropertySources().addFirst(new MapPropertySource("TestPropertySource", Map.of("test.myProperty", "Override")));
