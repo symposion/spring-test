@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="unit" />
+      <option name="name" value="unit" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/unit" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jitpack.io" />
+      <option name="name" value="jitpack.io" />
+      <option name="url" value="https://jitpack.io" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="nest" />
+      <option name="name" value="nest" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/nest" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="pulsar" />
+      <option name="name" value="pulsar" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/pulsar" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="emis-datamodel" />
+      <option name="name" value="emis-datamodel" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/emis-datamodel" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="pkb-common" />
+      <option name="name" value="pkb-common" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/pkb-common" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="kms" />
+      <option name="name" value="kms" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/kms" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="commons-crypto" />
+      <option name="name" value="commons-crypto" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/commons-crypto" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="rest-assured" />
+      <option name="name" value="rest-assured" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/rest-assured" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="commons-hibernate" />
+      <option name="name" value="commons-hibernate" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/commons-hibernate" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="message-hasher" />
+      <option name="name" value="message-hasher" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/message-hasher" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="omni" />
+      <option name="name" value="omni" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/omni" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="cdisource" />
+      <option name="name" value="cdisource" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/cdisource" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="commons-testing" />
+      <option name="name" value="commons-testing" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/commons-testing" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven-central" />
+      <option name="name" value="maven-central" />
+      <option name="url" value="https://repo.maven.apache.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="hapi-fhir" />
+      <option name="name" value="hapi-fhir" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/hapi-fhir" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="questionnaireservice" />
+      <option name="name" value="questionnaireservice" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/questionnaireservice" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="java-spark" />
+      <option name="name" value="java-spark" />
+      <option name="url" value="https://maven.pkg.github.com/patientsknowbest/java-spark" />
+    </remote-repository>
+  </component>
+</project>
