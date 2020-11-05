@@ -1,11 +1,14 @@
-package uk.co.symposion;
+package uk.co.symposion.app;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 
 @ConfigurationProperties(prefix="test")
-@RefreshScope
-public class TestProperties {
+public class TestPropertiesThree {
+
+    public TestPropertiesThree() {
+        System.out.println("Constructing TestPropertiesThree");
+    }
 
     private String myProperty;
 
