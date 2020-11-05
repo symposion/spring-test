@@ -36,6 +36,8 @@ public class MyBean {
     @Order()
     public void doSomethingAfterStartup() {
         System.out.println("hello world, I have just started up, bean message is: " + testProperties.getMyProperty());
+        System.out.println("hello world, I have just started up, bean message is: " + testPropertiesTwo.getMyProperty());
+        System.out.println("hello world, I have just started up, bean message is: " + testPropsThree.getMyProperty());
         Map<String, Object> overrides = new HashMap<>();
         environment.getPropertySources().addFirst(new MapPropertySource("TestPropertySource", overrides));
         overrides.put("test.myProperty", "Override");
